@@ -1,8 +1,30 @@
 body {
   background-color: rgba(11, 62, 84, 0.601);
 }
-.head {
+.caixa {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   margin: auto;
+  background-color: black;
+  width: 300px;
+  height: 300px;
+  color: white;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.linha {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: auto;
+  background-color: aliceblue;
+  width: 200px;
+  height: 5vh;
+  color: rgb(211, 16, 16);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
