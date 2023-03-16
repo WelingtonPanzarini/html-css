@@ -16,7 +16,7 @@ li {
 /*Barra de navegação*/
 header,
 .navbar {
-  background-color: #353043;
+  background-color: #353050;
 }
 #nav-container {
   padding-top: 0;
@@ -24,4 +24,17 @@ header,
 }
 #logo {
   width: 75px;
+}
+.navbar-brand {
+  padding: 0;
+  color: #fff1ff;
+}
+.navbar-brand:hover {
+  color: #fff1ff;
+}
+#navbar-links a {
+  color: #fff1ff;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 1rem 0.8rem;
 }
