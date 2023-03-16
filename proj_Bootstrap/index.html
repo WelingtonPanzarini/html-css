@@ -85,7 +85,27 @@
     </header>
     <main>
       <div class="container'fluid">
-        <div id="mainSlider" class="carousel slide" data-ride="carousel"></div>
+        <div id="mainSlider" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="mainSlider" data-slide-to="0" class="active"></li>
+            <li data-target="mainSlider" data-slide-to="1"></li>
+            <li data-target="mainSlider" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="imagens/soldadoSelva.jpg"
+                class="d-block w-100"
+                alt="Projetos de esola"
+              />
+              <div class="carousel-caption d-nome d-md-block">
+                <h2>Quer criar um PTCC na escola?</h2>
+                <p>Conte conosco no PTCC</p>
+                <a href="#" class="main-btn">Tirar o projeto do papel.</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <script src="js/script.js"></script>
