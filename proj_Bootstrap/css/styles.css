@@ -1,3 +1,27 @@
-h1 {
-  color: red;
+/*Gerais*/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.row {
+  margin: 0;
+}
+.container {
+  padding: 70px 0;
+}
+p,
+li {
+  color: #443;
+  font-size: 14px;
+}
+/*Barra de navegação*/
+header,
+.navbar {
+  background-color: #353043;
+}
+#nav-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#logo {
+  width: 75px;
 }
