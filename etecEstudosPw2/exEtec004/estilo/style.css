@@ -3,7 +3,7 @@ body {
 }
 .centralizar {
   text-align: center;
-  margin: auto;
+  margin: 30px 5px 5px 5px;
   padding: 15px;
   background-color: rgb(103, 216, 165);
   width: 300px;
