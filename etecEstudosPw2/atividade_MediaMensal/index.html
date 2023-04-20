@@ -20,11 +20,11 @@
             var media = (nota1+nota2+nota3+nota4)/4;
 
             if(media>4,5 && media<6){
-                alert("Recuperacao");
+                document.getElementById("media").innerHTML="Recuperacao"+ media;
             }else if(media < 4,5){
-                alert("Reporvado");
+                document.getElementById("media").innerHTML="Reprovado"+ media;
             }else{
-                alert("Aprovado")
+                document.getElementById("media").innerHTML="Aprovado"+ media;
             }        
             
         }
