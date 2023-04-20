@@ -4,15 +4,23 @@
         <title>Media dos alunos</title>
    
 </head> 
-<body>
+<body style="text-align: center;">
     <div> 
         Primeira nota <input id="nota1" type="number">
-        Segunda nota <input id="nota2" type="number">
-        Terceira nota <input id="nota3" type="number">
-        Quarta nota <input id="nota4" type="nunber" onblur="media()"> 
-        <span id="media">=</span>
-        <!--<button onclick="media()">Calcular media</button> --> 
     </div>
+        Segunda nota <input id="nota2" type="number">
+    <div>
+        Terceira nota <input id="nota3" type="number">
+    </div>
+    <div>
+        Quarta nota <input id="nota4" type="nunber" onkeypress="media()"> 
+    </div>
+    <div>
+        <span id="media">=</span>
+    </div>
+        <p id="media">Click(innerHTML)</p>
+        <button onclick="media()">Calcular media</button> 
+    
     <script type="text/JavaScript">
         function media() {
             var nota1 = parsefloat(document.getElementById("nota1").value);
