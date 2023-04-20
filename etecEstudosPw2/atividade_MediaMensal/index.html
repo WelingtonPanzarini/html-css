@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>    
-        <title>Input JavaScript</title>
+        <title>Media dos alunos</title>
+   
+</head> 
+<body>
+    <div> 
         Primeira nota <input id="nota1" type="number">
         Segunda nota <input id="nota2" type="number">
         Terceira nota <input id="nota3" type="number">
-        Quarta nota <input id="nota4" type="nunber" onkeypress="media()"> 
-        <span id="nota4">=</span>
-        <button onclick="media()"></button>    
+        Quarta nota <input id="nota4" type="nunber" onblur="media()"> 
+        <span id="media">=</span>
+        <!--<button onclick="media()">Calcular media</button> --> 
+    </div>
     <script type="text/JavaScript">
         function media() {
             var nota1 = parsefloat(document.getElementById("nota1").value);
@@ -26,11 +31,6 @@
             }        
             
         }
-
-
     </script>
-</head>
-<body>
-    
 </body>
 </html>
