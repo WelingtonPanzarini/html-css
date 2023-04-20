@@ -5,13 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Média Alunos</title>
+    <link rel="stylesheet" href="estilo/style.css">
 </head>
-<body text="Media alunos" style="text-align: center">    
-    <div><input type="number" id="n1"></div><br>
-    <div><input type="number" id="n2"></div><br>
-    <div><input type="number"  id="n3"></div><br>
-    <div><input type="number" id="n4" onkeyup="calcular()"></div><br>
-    <span id="s3">Resultado</span>
+<body class="container column center">
+    <button id="change">Trocar</button>
+    <div id cont1> 
+        <div id="wrap">   
+            1ª Nota <input type="number" id="n1"><br>
+            2ª Nota <input type="number" id="n2"><br>
+            3ª Nota <input type="number"  id="n3"><br>
+            4ª Nota <input type="number" id="n4" onblur="calcular()"><br>
+            <span id="s3">Resultado</span>
+        </div>
+    </div>
+    
     <script>
         function calcular(){
             var n1 = document.getElementById("n1").value;
@@ -27,6 +34,7 @@
                 document.getElementById("s3").innerHTML="Sua nota é "+s3+" e esta Aprovado!" ;
             }            
         }
-    </script>    
+    </script> 
+       
 </body>
 </html>

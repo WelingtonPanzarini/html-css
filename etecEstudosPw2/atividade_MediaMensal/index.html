@@ -2,42 +2,30 @@
 <html lang="pt-br">
 <head>    
         <title>Media dos alunos</title>
-   
+        <link rel="stylesheet" href="">   
 </head> 
-<body style="text-align: center;">
-    <div> 
-        Primeira nota <input id="nota1" type="number">
-    </div>
-        Segunda nota <input id="nota2" type="number">
-    <div>
-        Terceira nota <input id="nota3" type="number">
-    </div>
-    <div>
-        Quarta nota <input id="nota4" type="nunber" onkeypress="media()"> 
-    </div>
-    <div>
-        <span id="media">=</span>
-    </div>
-        <p id="media">Click(innerHTML)</p>
-        <button onclick="media()">Calcular media</button> 
-    
-    <script type="text/JavaScript">
-        function media() {
-            var nota1 = parsefloat(document.getElementById("nota1").value);
-            var nota2 = parsefloat(document.getElementById("nota2").value);
-            var nota3 = parsefloat(document.getElementById("nota3").value);
-            var note4 = parsefloat(document.getElementById("nota4").value);
+<body style="text-align: center">
+    <div>Primeira nota <input type="number" id="nota1" ></div><br>
+    <div>Segunda nota <input type="number" id="nota2" ></div><br>
+    <div>Terceira nota <input type="number" id="nota3" ></div><br>
+    <div>Quarta nota <input type="number" id="nota4" onkeypress=" "></div><br>
 
-            var media = (nota1+nota2+nota3+nota4)/4;
-
-            if(media>4,5 && media<6){
-                document.getElementById("media").innerHTML = "Recuperacao" + media;
-            }else if(media < 4,5){
-                document.getElementById("media").innerHTML = "Reprovado" + media;
+        <p id="media" onclick="calcular()">Resultado.</p>        
+           
+    <script>
+        function calcular() {
+            var nota1 = document.getElementById("nota1").value;
+            var nota2 = document.getElementById("nota2").value;
+            var nota3 = document.getElementById("nota3").value;
+            var nota4 = document.getElementById("nota4").value;           
+            var media = (Number(nota1)+Number(nota2)+Number(nota3)+Number(nota4))/4;
+            if(media>4.5 && media<6){
+                document.getElementById("media").innerHTML = "Recuperacao " + media;
+            }else if(media<4.5){
+                document.getElementById("media").innerHTML = "Reprovado " + media;
             }else{
-                document.getElementById("media").innerHTML = "Aprovado" + media;
+                document.getElementById("media").innerHTML = "Aprovado " + media;
             }        
-            
         }
     </script>
 </body>
