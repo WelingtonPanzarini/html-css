@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <form>
+<head>    
         <title>Input JavaScript</title>
-        Primeira nota <input id="nota1" type="number"></input>
-        Segunda nota <input id="nota2" type="number"></input>
-        Terceira nota <input id="nota3" type="number"></input>
-        Quarta nota <input id="nota4" type="nunber"> </input>
+        Primeira nota <input id="nota1" type="number">
+        Segunda nota <input id="nota2" type="number">
+        Terceira nota <input id="nota3" type="number">
+        Quarta nota <input id="nota4" type="nunber" onkeypress="media()"> 
         <span id="nota4">=</span>
-        <button onclick="media()">Calcular Media</button>
-    </form>
+        <button onclick="media()"></button>    
     <script type="text/JavaScript">
         function media() {
             var nota1 = parsefloat(document.getElementById("nota1").value);
@@ -20,11 +18,11 @@
             var media = (nota1+nota2+nota3+nota4)/4;
 
             if(media>4,5 && media<6){
-                document.getElementById("media").innerHTML="Recuperacao"+ media;
+                document.getElementById("media").innerHTML = "Recuperacao" + media;
             }else if(media < 4,5){
-                document.getElementById("media").innerHTML="Reprovado"+ media;
+                document.getElementById("media").innerHTML = "Reprovado" + media;
             }else{
-                document.getElementById("media").innerHTML="Aprovado"+ media;
+                document.getElementById("media").innerHTML = "Aprovado" + media;
             }        
             
         }
