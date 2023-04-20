@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Alunos</title>
+</head>
+<body text="Media alunos" style="text-align: center">    
+    <div><input type="number" id="n1"></div><br>
+    <div><input type="number" id="n2"></div><br>
+    <div><input type="number"  id="n3"></div><br>
+    <div><input type="number" id="n4" onkeyup="calcular()"></div><br>
+    <span id="s3">Resultado</span>
+    <script>
+        function calcular(){
+            var n1 = document.getElementById("n1").value;
+            var n2 = document.getElementById("n2").value;
+            var n3 = document.getElementById("n3").value;
+            var n4 = document.getElementById("n4").value;
+            var s3 = (Number(n1)+Number(n2)+Number(n3)+Number(n4))/4;
+            if(s3>4.5 && s3<6){
+                document.getElementById("s3").innerHTML="Sua nota é "+s3+" e esta de Recuperação! " ;
+            }else if(s3<4.5){
+                document.getElementById("s3").innerHTML= "Sua nota é "+s3+" e esta Reprovado!" ;
+            }else{
+                document.getElementById("s3").innerHTML="Sua nota é "+s3+" e esta Aprovado!" ;
+            }            
+        }
+    </script>    
+</body>
+</html>
