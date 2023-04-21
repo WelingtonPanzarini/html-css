@@ -15,17 +15,22 @@
     <script>
         function calcular() {
             var nota1 = document.getElementById("nota1").value;
-            var nota2 = document.getElementById("nota2").value;
+            var nota2 = document.getElementById("nota2").value; 
             var nota3 = document.getElementById("nota3").value;
             var nota4 = document.getElementById("nota4").value;           
             var media = (Number(nota1)+Number(nota2)+Number(nota3)+Number(nota4))/4;
-            if(media>4.5 && media<6){
-                document.getElementById("media").innerHTML = "Recuperacao " + media;
-            }else if(media<4.5){
-                document.getElementById("media").innerHTML = "Reprovado " + media;
-            }else{
-                document.getElementById("media").innerHTML = "Aprovado " + media;
-            }        
+
+            if(nota1<=10 && nota2<=10 && nota3<=10 && nota4<=10){
+                if(media>4.5 && media<6){
+                    document.getElementById("media").innerHTML = "Recuperacao " + media;
+                }else if(media<4.5){
+                    document.getElementById("media").innerHTML = "Reprovado " + media;
+                }else{
+                    document.getElementById("media").innerHTML = "Aprovado " + media;
+                } 
+                }else{
+                    alert("As notas só podem ter valores até no máximo 10 (inteiro)")
+            }      
         }
     </script>
 </body>
