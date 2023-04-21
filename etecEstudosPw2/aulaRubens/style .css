@@ -1,10 +1,10 @@
 * {
     
     margin: 5px;
-    padding: 25px;
-    height: 25px;
+    padding: 2px;
+    height: 50%;
     width: 50%;
-    border-radius: 20px;
+    border-radius: 15px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
