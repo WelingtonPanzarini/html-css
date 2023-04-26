@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    // Getting the input elements
+var input1 = document.getElementById('input1');
+var input2 = document.getElementById('input2');
+var input3 = document.getElementById('input3');
+var input4 = document.getElementById('input4');
+var result = document.getElementById('result');
+
+function calculateAverage() {
+  var val1 = parseFloat(input1.value);
+  var val2 = parseFloat(input2.value);
+  var val3 = parseFloat(input3.value);
+  var val4 = parseFloat(input4.value);
+
+  // Checking if the values are valid
+  if (val1 < 0 || val1 > 10 || isNaN(val1)) {
+    
+    return alert('Valor inválido em campo 1');
+  } else {
+    input1.style.backgroundColor = 'white';
+  }
+  if (val2 < 0 || val2 > 10 || isNaN(val2)) {
+    input2.style.backgroundColor = 'red';
+    return alert('Valor inválido em campo 2');
+  } else {
+    input2.style.backgroundColor = 'white';
+  }
+  if (val3 < 0 || val3 > 10 || isNaN(val3)) {
+    input3.style.backgroundColor = 'red';
+    return alert('Valor inválido em campo 3');
+  } else {
+    input3.style.backgroundColor = 'white';
+  }
+  if (val4 < 0 || val4 > 10 || isNaN(val4)) {
+    input4.style.backgroundColor = 'red';
+    return alert('Valor inválido em campo 4');
+  } else {
+    input4.style.backgroundColor = 'white';
+  }
+
+  // Calculating the average and displaying the result
+  var average = (val1 + val2 + val3 + val4) / 4;
+  result.innerHTML = 'A média é: ' + average.toFixed(2);
+}    
+</script>
+
+
+<body>
+        <input type="text" id="input1" placeholder="Enter value 1"/>
+        <br/><br/>
+        <input type="text" id="input2" placeholder="Enter value 2"/>
+        <br/><br/>
+        <input type="text" id="input3" placeholder="Enter value 3"/>
+        <br/><br/>
+        <input type="text" id="input4" placeholder="Enter value 4"/>
+        <br/><br/>
+        <button onclick="result()">Calcule</button>
+        <br/><br/>
+        <div id="result"></div>
+</body>   
+
+</html>

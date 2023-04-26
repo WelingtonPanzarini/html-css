@@ -20,31 +20,36 @@ submitBtn.addEventListener('click', () => {
         }
     }
 
-    if (n1 <= 10 && n2 <= 10 && n3 <= 10 && n4 <= 10) {
+    if (n1V<=10 && n2V<=10 && n3V<=10 && n4V<=10) {
         let med = (parseInt(n1V) + parseInt(n2V) + parseInt(n3V) + parseInt(n4V)) / 4
-
-
-        if (med > 4.5 && med < 6) {
-            res.innerText = "Recuperação, Sua nota final foi: " + med
-        } else if (med < 4.5) {
+        if(med >  10){
+            alert("A media não pode ser superior a 10!")
+        }        
+        if (med>4.5 && med<6) {
+            res.innerText = "Recuperação, Sua nota é : " + med
+        } else if (med<4.5) {
             res.innerText = "Reprovado. Sua nota final foi: " + med
         } else {
             res.innerText = "Aprovado. Sua nota final foi: " + med
         }
     } else {
-        alert("As notas só podem ter valores até no máximo 10 (inteiro)")
-    }
+        alert("As notas só podem ter valores até no máximo 10.")
+    }       
+   
 
 })
 
-    document.querySelector('#ns').addEventListener('onkeypressed', (e) => {
-    if(e.keycode == 13) {
-        console.log('tomadescar')
-    }
-})
+        document.querySelector('#ns').addEventListener('onkeypressed', (e) => {
+        if(e.keycode == 13) {
+         console.log('tomadescar')
+        }
+        })
 
 
-changeBtn.addEventListener('click', () => {
-    document.querySelector('#cont1').classList.toggle('hide')
-    document.querySelector('#cont2').classList.toggle('hide')
+    changeBtn.addEventListener('click', () => {
+        document.querySelector('#cont1').classList.toggle('hide')
+        document.querySelector('#cont2').classList.toggle('hide')
+
+//<button id="change">Trocar</button>
+
 })

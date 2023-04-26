@@ -7,34 +7,18 @@
     <title>Média Alunos</title>
     <link rel="stylesheet" href="style .css">
 </head>
-<body class="container column center">
-    <button id="changeBtn">Trocar</button>
-    <div id = "cont1"> 
-        <div id="wrap">   
+<body >    
+    <div> 
+        <div id="entra">   
             1ª Nota <input type="number" id="n1"><br>
             2ª Nota <input type="number" id="n2"><br>
             3ª Nota <input type="number"  id="n3"><br>
             4ª Nota <input type="number" id="n4" onblur="calcular()"><br>
-            <span id="s3">Resultado</span>
+            <span id="s3">=</span>
         </div>
     </div> 
-    <div class="hide" id="cont2">
-        <div id="wrap2">
-            <div class="editText">
-                <h1 id="resultado"></h1>
-                <div class="editText">
-                    <label for="ns">Digite a nota 1:</label>
-                    <input type="text" name="ns" id="ns">
-                    
-                </div>               
-            </div>
-        </div>
-    </div>   
-    <script>
-        changeBtn.addEventListener('click', () => {
-        document.querySelector('#cont1').classList.toggle('hide')
-        document.querySelector('#cont2').classList.toggle('hide')
-    })
+        
+    <script>       
         function calcular(){
             var n1 = document.getElementById("n1").value;            
             var n2 = document.getElementById("n2").value;           
@@ -51,13 +35,15 @@
                         document.getElementById("s3").innerHTML= "Sua nota é "+s3+" e Reprovado!" ;
                     }else{
                         document.getElementById("s3").innerHTML="Sua nota é "+s3+" e Aprovado!" ;
-                    } 
+                    }                   
+                     
                 } else {
                     alert("As notas só podem ser até 10")
                 }
             }else{
-                 document.getElementById("s3").style.border ="2px solid red";
-                 alert("As notas não podem ter valores nulos")
+                document.getElementById("s3").innerHTML="O valor não pode ser Nulo!";
+                document.getElementById("s3").style.border ="2px solid red";
+                alert("As notas não podem ter valores nulos")
                 }
             }             
     </script>     

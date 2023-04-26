@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Notas do Aluno </title>
     <link rel="stylesheet" href="style.css">
+    <script src="file2.js"></script>
 </head>
 
 <body class="container column center">
@@ -18,23 +19,23 @@
             </div>
             <div class="editText">
                 <label for="n1">Digite a nota 1:</label>
-                <input type="text" name="n1" id="n1">
+                <input type="number"  id="n1" required min="0" max="10">
             </div>
 
             <div class="editText">
                 <label for="n2">Digite a nota 2:</label>
-                <input type="text" name="n2" id="n2">
+                <input type="number"  id="n2" required min="0" max="10">
             </div>
 
             <div class="editText">
                 <label for="n3">Digite a nota 3:</label>
-                <input type="text" name="n3" id="n3">
+                <input type="number"  id="n3" required min="0" max="10">
 
             </div>
 
             <div class="editText">
                 <label for="n4">Digite a nota 4:</label>
-                <input type="text" name="n4" id="n4">
+                <input type="number"  id="n4" required min="0" max="10">
             </div>
 
             <div class="editText">
@@ -42,21 +43,24 @@
             </div>
         </div>
     </div>
+    
 
     <div class="hide" id="cont2">
         <div id="wrap2">
             <div class="editText">
                 <h1 id="resultado"></h1>
                 <div class="editText">
-                    <label for="ns">Digite a nota 1:</label>
-                    <input type="text" name="ns" id="ns">
-                    
+                    <label for="ns">Digite a nota :</label>
+                    <input type="number" name="ns" id="ns">                    
                 </div>               
             </div>
         </div>
     </div>
-
+    <!--<script src="script.js"></script>-->    
+    <script src="file1.js"></script>
+	
 </body>
-<script src="script.js"></script>
+    <!--<script src="file1.js"></script>-->
+    
 
 </html>
