@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>    
+</head>
+
 <body>
     <input type="text" id="n1" nome="valor1" placeholder="n1" onblur="calcular()">
     <input type="text" id="n2" nome="valor2" placeholder="n2" onblur="calcular()">
     <input type="text" id="n3" nome="valor3" placeholder="n3" onblur="calcular()">
     <input type="text" id="n4" nome="valor4" placeholder="n4" onblur="calcular()">
     <span id="resp">=</span>
-    
+
     <script>
 
-        function calcular(){
+        function calcular() {
             var n1v = document.getElementById("n1").value;
             var n2v = document.getElementById("n2").value;
             var n3v = document.getElementById("n3").value;
             var n4v = document.getElementById("n4").value;
-            var resp = (Number(n1v)+Number(n2v)+Number(n3v)+Number(n4v))/4;
+            var resp = (Number(n1v) + Number(n2v) + Number(n3v) + Number(n4v)) / 4;
 
             document.getElementById("resp").innerHTML = resp;
+            if (n1 < 0 && n2 < 0 && n3 < 0 && n4 < 0) {
+                if (n1.value.length == 0) {
+                    n1.style.boxShadow = "3px 3px 3px red"
 
-            if(n1.value.length==0){
-                n1.style.boxShadow = "3px 3px 3px red"
-            
-            }else{
-                n1.style.boxShadow = "3px 3px 3px blue"
+                } else {
+                    n1.style.boxShadow = "3px 3px 3px blue"
+                }
+
+                if (n2.value.length == 0) {
+                    n2.style.boxShadow = "3px 3px 3px red"
+                } else {
+                    n2.style.boxShadow = "3px 3px 3px blue"
+                }
+            } else {
+                alert("Os valores não podem ser negativos ");
             }
 
-            
-
         }
-        
+
 
     </script>
 </body>
+
 </html>
