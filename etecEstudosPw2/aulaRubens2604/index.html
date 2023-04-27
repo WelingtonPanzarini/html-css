@@ -28,7 +28,6 @@
             var resp = (Number(n1v) + Number(n2v) + Number(n3v) + Number(n4v)) / 4;
 
 
-
             if (n1.value.length == 0) {
                 n1.style.boxShadow = "3px 3px 3px red"
             } else {
@@ -36,11 +35,13 @@
             }
 
 
+
             if (n2.value.length == 0) {
                 n2.style.boxShadow = "3px 3px 3px red"
             } else {
                 n2.style.boxShadow = "3px 3px 3px blue"
             }
+
 
             if (n3.value.length == 0) {
                 n3.style.boxShadow = "3px 3px 3px red"
@@ -53,8 +54,8 @@
                 n4.style.boxShadow = "3px 3px 3px red"
             } else {
                 n4.style.boxShadow = "3px 3px 3px blue"
-
             }
+
 
             if (resp > 4.5 && resp < 6) {
                 document.getElementById("resp").innerHTML = "Você esta de recuperação " + resp;
