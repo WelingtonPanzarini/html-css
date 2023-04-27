@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>    
+<body>
+    <input type="text" id="valor1" nome="n1" placeholder="n1" onblur="calcular()">
+    <input type="test" id="valor2" nome="n2" placeholder="n2" onblur="calcular()">
+    <input type="text" id="valor3" nome="n3" placeholder="n3" onblur="calcular()">
+    <input type="text" id="valor4" nome="n4" placeholder="n4" onblur="calcular()">
+    
+    <script>
+
+        function calcular(){
+            var n1v = document.getElementById("valor1");
+            var n2v = document.getElementById("valor2");
+            var n3v = document.getElementById("valor3");
+            var n4v = document.getElementById("valor4");
+
+            if(n1v.value.length==0){
+                n1.style.boxShadow = "3px 3px 3px red"
+            }else if(n1v=="String"){
+                document.getElementById("valor1").innerHTML = "Só pode digitar números";
+            }else if(n1.style.length>=5){
+                n1.style.boxShadow = "3px 3px 3px blue"
+            }
+
+        }
+        
+
+    </script>
+</body>
+</html>
