@@ -7,10 +7,10 @@
     <title>Document</title>
 </head>    
 <body>
-    <input type="number" id="n1" nome="valor1" placeholder="n1" >
-    <input type="number" id="n2" nome="valor2" placeholder="n2" >
-    <input type="number" id="n3" nome="valor3" placeholder="n3" >
-    <input type="number" id="n4" nome="valor4" placeholder="n4" onblur="calcular()">
+    <input type="text" id="n1" nome="valor1" placeholder="n1" onblur="calcular()">
+    <input type="text" id="n2" nome="valor2" placeholder="n2" onblur="calcular()">
+    <input type="text" id="n3" nome="valor3" placeholder="n3" onblur="calcular()">
+    <input type="text" id="n4" nome="valor4" placeholder="n4" onblur="calcular()">
     <span id="resp">=</span>
     
     <script>
@@ -24,13 +24,11 @@
 
             document.getElementById("resp").innerHTML = resp;
 
-
-
-            if(n1v.value.length==0){
-                n1v.style.boxShadow = "3px 3px 3px red"
+            if(n1.value.length==0){
+                n1.style.boxShadow = "3px 3px 3px red"
             
             }else{
-                n1v.style.boxShadow = "3px 3px 3px blue"
+                n1.style.boxShadow = "3px 3px 3px blue"
             }
 
         }
