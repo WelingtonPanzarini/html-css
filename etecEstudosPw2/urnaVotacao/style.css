@@ -1,0 +1,40 @@
+*{
+    text-align: center;
+}
+.container{
+    text-align: center;
+    background-color: aqua;
+    margin: auto;    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+img{
+    right: 0%;
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border: solid 1px black;   
+}
+.cinzaEscuro{
+    top: 50%;
+    margin-top: -200px;
+    width: 250px;
+    height: 60px;
+    right: 20px;
+    position: absolute;
+}
+b{
+    position: relative;
+    top: 10px;
+}
+
+.branco{
+    color: " ";
+    font-weight: bold ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cinzaClaro{
+    color: " ";
+}
