@@ -47,6 +47,7 @@
     background-color: white;
     font-weight: bold ;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .laranja{
@@ -56,6 +57,7 @@
     background-color: orange;
     font-weight: bold ;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .verde{
@@ -65,6 +67,7 @@
     background-color: green;
     font-weight: bold ;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .cinzaClaro{
@@ -84,7 +87,8 @@
     padding: 5px 5px 5px 5px;
     border: solid 2px black;
     width: 290px;
-    right: -2px;   
+    right: -2px; 
+    
 }
 
 body {
@@ -93,17 +97,19 @@ body {
     top: 50%;
     left: 75%;            
     transform: translate(-50%, -50%);
+    
 }
 
 .result {
     top: 144%;
-    margin-top: 250px;
+    margin-top: 241px;
     position: absolute;
     background-color: #d2f342;    
-    padding: 5px 5px 5px 5px;
+    padding: 10px 5px 10px 5px;
     border: solid 2px black;
     width: 241px;
-    right: 194px;  
+    right: 194px;
+    color: red;  
 }
 
 .btnClick{
@@ -114,14 +120,15 @@ body {
     border: 2px solid #4CAF50;
     padding: 13px 33px 1px 5px;
     text-align: center;
+    cursor: pointer;
+    border-radius: 15px;
 }
 
 .botao {
     background-color: #564c4c; /*rgb*/   
     padding: 15px 32px;        
     font-size: 59px;
-    margin: 4px 2px;
-    cursor: pointer;
+    margin: 4px 2px;    
     text-align: center;
 }
  
