@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar idade para votar</title>
+</head>
+    <style>
+        body{
+            text-align: center;
+            background-color: aquamarine;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: green;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        .entrada{
+            
+            text-align: center;
+            margin: 2px;            
+            color: red;
+        }
+    </style>
+
+<body>
+    <h1>Validar idade</h1>
+    <div class="entrada">
+    <label for="nome">Nome</label><br>
+    <input type="text" id="nome"><br><br>
+    <label for="ano">Digite o ano do seu nascimento</label><br>
+    <input type="text" id="ano"><br><br>
+
+    <button onclick="verificar()">Verificar</button>
+    </div>
+    <p id="resultado"></p>
+
+    <script>
+        function verificar() {
+
+            var anoAtual = new Date().getFullYear();
+            var anoDigitado = document.getElementById("ano").value; // Substitua pelo ano digitado pelo usuário
+            var idade = anoAtual - anoDigitado;
+            var nome = document.getElementById("nome").value;
+            var idade = anoAtual - anoDigitado;
+
+            if (idade >= 16 && idade <= 65) {
+                alert("Sua idade é de " + idade + " anos.")
+                document.getElementById("resultado").innerHTML = nome + ", você tem " + idade + " anos e o voto é obrigatório! "
+            } else if (idade > 65) {
+                alert("Sua idade é de " + idade + " anos.")
+                document.getElementById("resultado").innerHTML = nome + ", você tem " + idade + " anos e o voto não é obrigatório."
+            } else {
+                alert("Sua idade é de " + idade + " anos.")
+                document.getElementById("resultado").innerHTML = nome + ", você tem " + idade + " anos e não pode votar."
+            }
+        }
+    </script>
+
+</body>
+
+</html>

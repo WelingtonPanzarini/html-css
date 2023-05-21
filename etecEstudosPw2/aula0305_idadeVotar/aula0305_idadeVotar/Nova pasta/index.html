@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação idade</title>
+</head>
+<form>
+    <label for="nome">Digite o seu nome:</label>
+    <input type="text" id="nome" nome="nome"><br>
+    <label for="idade">Digite sua idade:</label>
+    <input type="number" id="idade" name="idade"><br>
+    <textarea name="" id="resp" cols="30" rows="2"></textarea>    
+    <button type="button" onclick="verificar()">Verificar</button>
+</form>
+<script>
+    function verificar() {
+        var idade = document.getElementById("idade").value;
+        if (idade >= 16 && idade <= 65) {
+            alert("Você tem idade para votar.");
+            document.getElementById("resp").innerHTML = "Você tem "+idade+" e é obrigado a votar.";
+        } else if (idade > 65) {
+            alert("Você é maior de 65 anos e não precisa mais votar.");
+            document.getElementById("resp").innerHTML = "Você tem "+idade+" e não precisa votar.";
+        } else {
+            alert("Sua idade é menor de 16 anos e não vota");
+            document.getElementById("resp").innerHTML = "Você tem "+idade+" e não vota.";
+        }
+    }
+</script>
+</body>
+
+</html>
